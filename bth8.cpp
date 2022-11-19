@@ -104,7 +104,7 @@ void timx(int a[10][10],int m, int n)
     	{
           if(a[i][j]==x)
             {
-             printf("%d \t",i);
+             printf(" %d %d \t",i,j);
             }
         }
     }
