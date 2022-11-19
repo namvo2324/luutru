@@ -109,6 +109,20 @@ void timx(int a[10][10],int m, int n)
         }
     }
 }
+void sapxep (int b[10], int n, int m)
+{
+    for (int i = m*n ; i > 0 ; i--)
+    {
+        for (int j = 0 ; j < i ; j++)
+            if (b[j] < b[j + 1])
+            {
+                int tmp;
+                tmp = b[j];
+                b[j] = b[j + 1];
+                b[j + 1] = tmp;
+            }
+    }
+}
      
 	
 	
